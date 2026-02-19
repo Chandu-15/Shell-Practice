@@ -38,6 +38,6 @@ if [ $? -ne 0 ]; then
     dnf install python3 -y &>>$log_file
     validation $? "python"
 else 
-    echo "$Y Python already exists.... Skipping.....$N" | tee -a $log_file 
+    echo -e "$Y Python already exists.... Skipping.....$N" | tee -a $log_file 
 fi
 echo "script execution ended at: $(date)" | tee -a $log_file
