@@ -35,8 +35,9 @@ fi
 
 dnf list installed Python &>>$log_file
 if [ $? -ne 0 ]; then
-    dnf install python -y 
+    dnf install python -y &>>$log_file
     validation $? "python"
 else 
     echo "$Y Python already exists.... Skipping.....$N" | tee -a $log_file 
 fi
+echo "script execution ended at: $(date)" | tee -a $log_file
