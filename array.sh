@@ -1,3 +1,3 @@
 #!/bin/bash
 languages=("python","linux","shell")
-echo "all languages are ${languages [@]}
+echo "all languages are ${languages [@]}"
