@@ -1,8 +1,8 @@
 #!/bin/bash
 NUMBER=$1
-if [$NUMBER -lt 10]; then 
+if [ $NUMBER -lt 10 ]; then 
     echo "Given number $NUMBER is less than 10"
-elif [$NUMBER -eq 10]; then
+elif [ $NUMBER -eq 10 ]; then
     echo "Given number $NUMBER is equal than 10"
 else
      echo "Given number is greater than 10"
