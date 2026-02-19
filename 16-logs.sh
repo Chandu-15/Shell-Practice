@@ -33,9 +33,9 @@ else
     echo -e "$Y MYSQL already exists.... Skipping....$N" | tee -a $log_file 
 fi
 
-dnf list installed python &>>$log_file
+dnf list installed python3 &>>$log_file
 if [ $? -ne 0 ]; then
-    dnf install python -y &>>$log_file
+    dnf install python3 -y &>>$log_file
     validation $? "python"
 else 
     echo "$Y Python already exists.... Skipping.....$N" | tee -a $log_file 
